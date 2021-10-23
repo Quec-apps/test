@@ -39,7 +39,7 @@ justify-content: space-between;
 }
 .left-ct, .right-ct {
 width: 19vw;
-display: flex; flex-wrap: wrap;
+display: flex; flex-wrap: wrap; flex-direction: row-reverse;
 }
 .left-ct{margin-left: 1vw;}
 .right-ct{margin-right: 1vw;}
@@ -55,7 +55,7 @@ display: flex; justify-content: space-around;
 .ct {
 width: 19vw; height: 5vh;
 border-radius: 5px; background-color: crimson;
-position: relative;
+position: relative; display: flex; flex-wrap: wrap; align-items: center;
 }
 .ct-txt {
 width: 100%; text-align: center;
@@ -64,7 +64,7 @@ position: relative;
 z-index: 1;
 }
 .ct-img {
-width: 5vw; height: 5vw;
+width: 9vw; height: 9vw;
 position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
 z-index: 0;
 }
@@ -73,6 +73,16 @@ width: 100%; text-align: center;
 font-size: 2.7vw;
 position: relative;
 z-index: 1;
+}
+
+.liability {
+background-color: #fa2121;
+}
+.asset {
+background-color: #37ec30;
+}
+.other {
+background-color: #3737ff;
 }
 </style>
 <body>
@@ -94,8 +104,15 @@ z-index: 1;
 </div>
 <div class="mid-ct"></div>
 <div class="right-ct">
+
+    <div class="ct"></div><div class="ct"></div><div class="ct"></div><div class="ct"></div><div class="ct"></div>
     <div class="ct"></div><div class="ct"></div><div class="ct"></div><div class="ct"></div><div class="ct"></div><div class="ct"></div><div class="ct"></div><div class="ct"></div>
-    <div class="ct"></div><div class="ct"></div><div class="ct"></div><div class="ct"></div><div class="ct"></div><div class="ct"></div><div class="ct"></div><div class="ct"></div>
+
+    <div class="ct other"><div class="ct-txt">Job</div><img src="res/img/job.png" class="ct-img"><div class="ct-amt">$100</div></div>
+    <div class="ct asset"><div class="ct-txt">Land</div><img src="res/img/land.png" class="ct-img"><div class="ct-amt">$100</div></div>
+    <div class="ct liability"><div class="ct-txt">Charity</div><img src="res/img/hospital.png" class="ct-img"><div class="ct-amt">$100</div></div>
+
+
 </div>
 
 
