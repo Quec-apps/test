@@ -10,7 +10,7 @@
 <style>
 @font-face {
     font-family: Rubik;
-    src: url(res/fonts/Rubik-Bold.ttf);
+    src: url(res/fonts/Rubik-Medium.ttf);
 }
 html, body {
 width: 100vw; height: 100vh; overflow: hidden;
@@ -90,9 +90,6 @@ background-color: #17ca11;
 .other {
 background-color: #acaf0d;
 }
-.free {
-background-color: #18b9b9;
-}
 
 .round {
 width: 100%; text-align: center;
@@ -101,65 +98,79 @@ font-size: 5vw;
 
 .player-con {
 width:100%; height: fit-content;
-display: flex; flex-wrap: wrap; justify-content: center;
+display: flex; flex-wrap: wrap; justify-content: space-around;
 }
 .player-bg {
-width: 95%; padding: 1vh 0; margin-top: 1vh;
+width: 48%; padding: 1vh 0; margin-top: 1vh;
 border-radius: 10px; background-color: white;
-display: flex; flex-wrap: wrap; justify-content: center;
+display: flex; flex-wrap: wrap; justify-content: space-around;
 }
 </style>
 <body>
 
 <div class="top">
-    <div class="ct ct22 free"><div class="ct-txt-bg"><div class="ct-txt">Free Point</div></div><img src="res/img/job.png" class="ct-img"></div>
+    <div class="ct ct22 free"><div class="ct-txt-bg"><div class="ct-txt">Free Point</div></div><img src="res/img/free-point.png" class="ct-img"></div>
     <div class="ct ct21"><img src="res/img/job.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">Job</div><div class="ct-amt other">$100</div></div></div>
-    <div class="ct ct20"><img src="res/img/land.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">Building</div><div class="ct-amt asset">$100</div></div></div>
-    <div class="ct ct19"><img src="res/img/hospital.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">Income tax</div><div class="ct-amt liability">$100</div></div></div>
-    <div class="ct ct18 free"><img src="res/img/job.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">Free Point</div></div></div>
+    <div class="ct ct20"><img src="res/img/building.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">Building</div><div class="ct-amt asset">$100</div></div></div>
+    <div class="ct ct19"><img src="res/img/income-tax.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">Income tax</div><div class="ct-amt liability">$100</div></div></div>
+    <div class="ct ct18 free"><img src="res/img/free-point.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">Free Point</div></div></div>
 </div>
 <div class="mid">
 
 <div class="left-ct">
-<div class="ct ct23"><div class="ct-txt-bg"><div class="ct-txt">Charity</div><div class="ct-amt liability">$100</div></div><img src="res/img/hospital.png" class="ct-img"></div>
+<div class="ct ct23"><div class="ct-txt-bg"><div class="ct-txt">Charity</div><div class="ct-amt liability">$100</div></div><img src="res/img/charity.png" class="ct-img"></div>
 <div class="ct ct24"><div class="ct-txt-bg"><div class="ct-txt">Land</div><div class="ct-amt asset">$100</div></div><img src="res/img/land.png" class="ct-img"></div>
 <div class="ct ct25"><div class="ct-txt-bg"><div class="ct-txt">Job</div><div class="ct-amt other">$100</div></div><img src="res/img/job.png" class="ct-img"></div>
 <div class="ct ct26"><div class="ct-txt-bg"><div class="ct-txt">Hospital bill</div><div class="ct-amt liability">$100</div></div><img src="res/img/hospital.png" class="ct-img"></div>
 <div class="ct ct27"><div class="ct-txt-bg"><div class="ct-txt">House</div><div class="ct-amt asset">$100</div></div><img src="res/img/house.png" class="ct-img"></div>
-<div class="ct ct28"><div class="ct-txt-bg"><div class="ct-txt">Trade</div><div class="ct-amt other">$100</div></div><img src="res/img/job.png" class="ct-img"></div>
-<div class="ct ct29"><div class="ct-txt-bg"><div class="ct-txt">Traffic fine</div><div class="ct-amt liability">$100</div></div><img src="res/img/hospital.png" class="ct-img"></div>
-<div class="ct ct30"><div class="ct-txt-bg"><div class="ct-txt">Building</div><div class="ct-amt asset">$100</div></div><img src="res/img/land.png" class="ct-img"></div>
-<div class="ct ct31"><div class="ct-txt-bg"><div class="ct-txt">Marriage</div><div class="ct-amt other">$100</div></div><img src="res/img/job.png" class="ct-img"></div>
-<div class="ct ct32"><div class="ct-txt-bg"><div class="ct-txt">Income tax</div><div class="ct-amt liability">$100</div></div><img src="res/img/hospital.png" class="ct-img"></div>
-<div class="ct ct33"><div class="ct-txt-bg"><div class="ct-txt">Lottery</div><div class="ct-amt asset">$100</div></div><img src="res/img/land.png" class="ct-img"></div>
-<div class="ct ct34"><div class="ct-txt-bg"><div class="ct-txt">Theft</div><div class="ct-amt liability">$100</div></div><img src="res/img/hospital.png" class="ct-img"></div>
+<div class="ct ct28"><div class="ct-txt-bg"><div class="ct-txt">Trade</div><div class="ct-amt other">$100</div></div><img src="res/img/trade.png" class="ct-img"></div>
+<div class="ct ct29"><div class="ct-txt-bg"><div class="ct-txt">Traffic fine</div><div class="ct-amt liability">$100</div></div><img src="res/img/traffic-fine.png" class="ct-img"></div>
+<div class="ct ct30"><div class="ct-txt-bg"><div class="ct-txt">Building</div><div class="ct-amt asset">$100</div></div><img src="res/img/building.png" class="ct-img"></div>
+<div class="ct ct31"><div class="ct-txt-bg"><div class="ct-txt">Marriage</div><div class="ct-amt other">$100</div></div><img src="res/img/marriage.png" class="ct-img"></div>
+<div class="ct ct32"><div class="ct-txt-bg"><div class="ct-txt">Income tax</div><div class="ct-amt liability">$100</div></div><img src="res/img/income-tax.png" class="ct-img"></div>
+<div class="ct ct33"><div class="ct-txt-bg"><div class="ct-txt">Lottery</div><div class="ct-amt asset">$100</div></div><img src="res/img/lottery.png" class="ct-img"></div>
+<div class="ct ct34"><div class="ct-txt-bg"><div class="ct-txt">Theft</div><div class="ct-amt liability">$100</div></div><img src="res/img/theft.png" class="ct-img"></div>
 <div class="ct ct35"><div class="ct-txt-bg"><div class="ct-txt">Job</div><div class="ct-amt other">$100</div></div><img src="res/img/job.png" class="ct-img"></div>
 <div class="ct ct36"><div class="ct-txt-bg"><div class="ct-txt">Hospital bill</div><div class="ct-amt liability">$100</div></div><img src="res/img/hospital.png" class="ct-img"></div>
 <div class="ct ct37"><div class="ct-txt-bg"><div class="ct-txt">House</div><div class="ct-amt asset">$100</div></div><img src="res/img/house.png" class="ct-img"></div>
-<div class="ct ct38"><div class="ct-txt-bg"><div class="ct-txt">Divorce</div><div class="ct-amt other">$100</div></div><img src="res/img/job.png" class="ct-img"></div>
+<div class="ct ct38"><div class="ct-txt-bg"><div class="ct-txt">Divorce</div><div class="ct-amt other">$100</div></div><img src="res/img/divorce.png" class="ct-img"></div>
 </div>
 <div class="mid-ct">
     <div class="round">DAY 1</div>
 <div class="player-con">
 <style>
 .pl-top {
-width: 95%;
-display: flex;
+width: 100%;
+display: flex; flex-wrap: wrap;
 align-items: center;
 }
+.pl-top-img {
+width: 5vw; height: 5vw;
+}
 .pl-txt {
+width: 100%; text-align: center;
 font-size: 3.5vw;
+display: flex; align-items: center; justify-content: center;
+}
+.pl-img-bg {
+width: 100%; height: 8vw;
+display: flex; justify-content: space-evenly; align-items: center;
 }
 .pl-img {
-width: 6vw; height: 6vw;
+width: 5vw; height: 5vw;
+visibility: hidden;
 }
 
 .pl-btm {
 width: 95%;
 }
-.cash-txt {font-size: 3vw; text-align: center;}
-.cash2-bg {width: 100%; display: flex; justify-content: space-between;}
-.profit, .expense {font-size: 3vw;}
+.cash-txt {
+font-size: 3vw; text-align: center;
+background-color: green; color: white;
+border-radius: 3px; padding: .2vh 0;
+}
+.cash2-bg {width: 100%; display: flex; flex-wrap: wrap; justify-content: space-between;}
+.profit, .expense {width: 100%; font-size: 3vw; text-align: center;}
 
 .dice-area {
 width: 100%; height: 20vh;
@@ -194,7 +205,7 @@ animation: dice-down 600ms ease infinite;
 .c-img {
 position: absolute; display: none;
 width: 3.5vw; height: 3.5vw;
-z-index: 10; opacity: .8;
+z-index: 10; 
 }
 .c-img1 {top: 5%; left: 2%;}
 .c-img2 {top: 5%; left: 40%;}
@@ -241,8 +252,8 @@ font-size: 3vw; display: flex; align-items: center;
 .turn-img {
 width: 5vw; height: 5vw;
 }
-</style>
 
+</style>
 
 </div>
 <div class="dice-area">
@@ -277,22 +288,22 @@ width: 5vw; height: 5vw;
 <div class="right-ct">
 
     
-    <div class="ct ct17"><img src="res/img/job.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">Divorce</div><div class="ct-amt other">$100</div></div></div>
+    <div class="ct ct17"><img src="res/img/divorce.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">Divorce</div><div class="ct-amt other">$100</div></div></div>
     <div class="ct ct16"><img src="res/img/house.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">House</div><div class="ct-amt asset">$100</div></div></div>
     <div class="ct ct15"><img src="res/img/hospital.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">Hospital bill</div><div class="ct-amt liability">$100</div></div></div>
     <div class="ct ct14"><img src="res/img/job.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">Job</div><div class="ct-amt other">$100</div></div></div>
-    <div class="ct ct13"><img src="res/img/hospital.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">Theft</div><div class="ct-amt liability">$100</div></div></div>
-    <div class="ct ct12"><img src="res/img/land.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">Lottery</div><div class="ct-amt asset">$100</div></div></div>
-    <div class="ct ct11"><img src="res/img/hospital.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">Income tax</div><div class="ct-amt liability">$100</div></div></div>
-    <div class="ct ct10"><img src="res/img/job.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">Marriage</div><div class="ct-amt other">$100</div></div></div>
-    <div class="ct ct9"><img src="res/img/land.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">Building</div><div class="ct-amt asset">$100</div></div></div>
-    <div class="ct ct8"><img src="res/img/hospital.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">Traffic fine</div><div class="ct-amt liability">$100</div></div></div>
-    <div class="ct ct7"><img src="res/img/job.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">Trade</div><div class="ct-amt other">$100</div></div></div>
+    <div class="ct ct13"><img src="res/img/theft.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">Theft</div><div class="ct-amt liability">$100</div></div></div>
+    <div class="ct ct12"><img src="res/img/lottery.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">Lottery</div><div class="ct-amt asset">$100</div></div></div>
+    <div class="ct ct11"><img src="res/img/income-tax.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">Income tax</div><div class="ct-amt liability">$100</div></div></div>
+    <div class="ct ct10"><img src="res/img/marriage.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">Marriage</div><div class="ct-amt other">$100</div></div></div>
+    <div class="ct ct9"><img src="res/img/building.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">Building</div><div class="ct-amt asset">$100</div></div></div>
+    <div class="ct ct8"><img src="res/img/traffic-fine.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">Traffic fine</div><div class="ct-amt liability">$100</div></div></div>
+    <div class="ct ct7"><img src="res/img/trade.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">Trade</div><div class="ct-amt other">$100</div></div></div>
     <div class="ct ct6"><img src="res/img/house.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">House</div><div class="ct-amt asset">$100</div></div></div>
     <div class="ct ct5"><img src="res/img/hospital.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">Hospital bill</div><div class="ct-amt liability">$100</div></div></div>
     <div class="ct ct4"><img src="res/img/job.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">Job</div><div class="ct-amt other">$100</div></div></div>
     <div class="ct ct3"><img src="res/img/land.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">Land</div><div class="ct-amt asset">$100</div></div></div>
-    <div class="ct ct2"><img src="res/img/hospital.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">Charity</div><div class="ct-amt liability">$100</div></div></div>
+    <div class="ct ct2"><img src="res/img/charity.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">Charity</div><div class="ct-amt liability">$100</div></div></div>
 
 
 </div>
@@ -301,10 +312,10 @@ width: 5vw; height: 5vw;
 </div>
 <div class="btm">
 
-    <div class="ct ct39 free"><div class="ct-txt-bg"><div class="ct-txt">Free Point</div></div><img src="res/img/land.png" class="ct-img"></div>
-    <div class="ct ct40"><img src="res/img/job.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">Divorce</div><div class="ct-amt other">$100</div></div></div>
-    <div class="ct ct41"><img src="res/img/land.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">Theft</div><div class="ct-amt liability">$100</div></div></div>
-    <div class="ct ct42"><img src="res/img/land.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">Lottery</div><div class="ct-amt asset">$100</div></div></div>
+    <div class="ct ct39 free"><div class="ct-txt-bg"><div class="ct-txt">Free Point</div></div><img src="res/img/free-point.png" class="ct-img"></div>
+    <div class="ct ct40"><img src="res/img/divorce.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">Divorce</div><div class="ct-amt other">$100</div></div></div>
+    <div class="ct ct41"><img src="res/img/theft.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">Theft</div><div class="ct-amt liability">$100</div></div></div>
+    <div class="ct ct42"><img src="res/img/lottery.png" class="ct-img"><div class="ct-txt-bg"><div class="ct-txt">Lottery</div><div class="ct-amt asset">$100</div></div></div>
     <div class="ct ct1 free">START</div>
 </div>
 
@@ -317,58 +328,142 @@ justify-content: center;
 }
 .dialog-box-top {
 position: absolute; top: -7%; text-align: center; padding: 1.5vw 0; font-size: 4vw;
-width: 80%; border-radius: 5px; background-color: turquoise; color: white;
-display: flex; align-items: center; justify-content: center;
-animation: box-top 600ms ease 1;
+width: 80%; border-radius: 5px; background-color: #ff6f0e; color: white;
+display: flex; align-items: center; justify-content: center; box-shadow: 1vw 1vw 0px #cb5b10;
+animation: box-top 600ms ease 1; z-index: 1;
 } @keyframes box-top {
     0%{transform: scale(0); opacity: 0;}
     70%{transform: scale(0); opacity: 0;}
     100%{transform: scale(1); opacity: 1;}
 }
 .dialog-box-btm {
-width: 100%; height: 50vw;
-border-radius: 10px; background-color: tomato;
-display: flex; flex-wrap: wrap;
+width: 100%; height: 45vw; position: relative;
+border-radius: 10px; background-color: #fff6b3;
+display: flex; flex-wrap: wrap; overflow:hidden;
+box-shadow: 1vw 1vw 0px #0000005d;
 justify-content: center; align-content: space-evenly;
 animation: box-btm 400ms ease 1;
 } @keyframes box-btm {
     0%{transform: scale(0); opacity: 0;}
     100%{transform: scale(1); opacity: 1;}
 }
-.cash-img {
-width: 18vw; height: 9vw;
+.cash-flow {
+width: 100%;
+position: absolute;
+top: 100%; left: 0;
+z-index: 0; opacity: .8;
+animation: cash_flow 3000ms ease 1;
+} @keyframes cash_flow {
+    0%{top: -60%;}
+    100%{top: 100%;}
+}
+.dialog-char-img {
+width: 12vw; height: 12vw;
+margin-top: 2vh;
 }
 .dialog-box-txt {
 width: 100%; text-align: center;
-font-size: 4vw; color: white;
+font-size: 4vw; color: #e85e0b;
 }
 .dialog-char {
 width: 5vw; height: 5vw;
 margin-right: 2vw;
 }
+.dialog-box-name {
+width: 80%; padding: 1vh 0; text-align: center; color: white;
+background-color: #e22f2f; border-radius: 8px; font-size: 4vw;
+}
+
+.sell-asset {
+width:90vw; height: 25vh;
+background-color: white; border-radius: 10px;
+position: fixed; top: 74vh; left: 5vw;
+z-index: 10; display: none;
+animation: sell-asset 400ms ease 1;
+} @keyframes sell-asset {
+    0%{transform: translateY(100%); opacity: 0;}
+    100%{transform: translateY(0%); opacity: 1;}
+}
+
+.house-bg {
+width: 100%;
+}
+.house-ct, .land-ct, .building-ct {
+width: 100%; margin-top: .5vh; font-size: 3vw;
+display: flex; justify-content: space-around; align-items: center;
+}
+.sell-asset-img {
+width: 5vw; height: 5vw;
+}
+.sell-asset-btn {
+width: 10vw; text-align: center;
+background-color: green; color: white;
+border-radius: 5px; padding: 1vh 3vw; font-size: 2.5vw;
+} .sell-asset-btn:active {
+opacity: .6;
+}
+.sell-asset-top {
+width: 100%; height: 5vh;
+display: flex; flex-direction: row-reverse;
+}
+.sell-asset-ct-bg {
+height: 20vh; overflow-y: scroll;
+}
+.close-img {
+width: 7vw; height: 7vw;
+margin:1vh 2vw
+} .close-img:active {
+opacity: .6;
+}
 </style>
 <div class="dialog-box-bg">
-<div class="dialog-box-top"><img src="res/img/charac/1.png" class="dialog-char">Player <span id="dialog-box-top"></span></div>
+<div class="dialog-box-top"><span id="type">Charity</span></div>
 <div class="dialog-box-btm">
-<img src="res/img/cash.png" class="cash-img">
-<div class="dialog-box-txt">Congrats!<br/>You bought the land for $500</div>
+<img src="res/img/cash-flow.png" class="cash-flow">
+<img src="res/img/charac/1.png" class="dialog-char-img">
+<div class="dialog-box-name">Player<span id="dialog-box-top"></span></div>
+<div class="dialog-box-txt">-$500</div>
+</div>
+</div>
+
+<div class=" sell-asset">
+<div class="sell-asset-top">
+<img src="res/img/close.png" class="close-img">
+</div>
+<div class="sell-asset-ct-bg">
+<div class="house-bg"></div>
+<div class="land-bg"></div>
+<div class="building-bg"></div>
 </div>
 </div>
 
 <audio src="res/sound/dice.wav" autoplay="false" id="dice-sound"></audio>
+<audio src="res/sound/jump_sound.mp3" autoplay="false" id="jump-sound"></audio>
+<audio src="res/sound/coins_spend.mp3" autoplay="false" id="spend-sound"></audio>
+<audio src="res/sound/coins_earn.wav" autoplay="false" id="earn-sound"></audio>
+<audio src="res/sound/button.mp3" autoplay="false" id="button-sound"></audio>
+<audio src="res/sound/married.mp3" autoplay="false" id="married-sound"></audio>
 <script>
-totalPlayers = 6;
+totalPlayers = 2;
 currentPlayer = 1;
 
 for (let x = 1; x <= totalPlayers; x++) {
 window["P"+x+"_pos"] = 0;
 window["P_cash"+x] = 1000;
-window["P"+x+"_land"] = [];
+window["P"+x+"_land"] = []; window["P"+x+"_house"] = []; window["P"+x+"_building"] = [];
+window["P"+x+"_marry"] = false;
+window["p"+x+"_job"] = null;
+window["p"+x+"_point"] = 0;
 
 $(".player-con").append(`
-<div class="player-bg">
-<div class="pl-top"><div class="pl-txt">Player ${x}</div>
-<img src="res/img/job.png" class="pl-img">
+<div class="player-bg player-bg${x}">
+<div class="pl-top"><div class="pl-txt"><img src="res/img/charac/${x}.png" class="pl-top-img">${x}</div>
+<div class="pl-img-bg">
+<img src="res/img/job.png" class="pl-img pl-job${x}">
+<img src="res/img/marriage.png" class="pl-img pl-marry${x}">
+<img src="res/img/house.png" class="pl-img pl-house${x}">
+<img src="res/img/land.png" class="pl-img pl-land${x}">
+</div>
 </div>
 <div class="pl-btm">
 <div class="cash-txt">Cash: $<span id="cash${x}"></span></div>
@@ -379,6 +474,7 @@ $(".player-con").append(`
 
 $("#cash"+x).html(window["P_cash"+x]);
 }
+$(".player-bg1").css({backgroundColor:"#00ffff"});
 
 for (let i = 1; i <= 42; i++) {
 $(".ct"+i).append(`
@@ -400,8 +496,8 @@ function diceClick() {
 $(".dice-img").off();
 $(".dice-arrow").css({visibility:'hidden'});
 document.getElementById("dice-sound").play();
-//diceVar = Math.floor(Math.random() * 6 + 1);
-diceVar = 3;
+diceVar = Math.floor(Math.random() * 6 + 1);
+//diceVar = 1;
 setTimeout(() => {$(".dice-image").attr("src", "res/img/dice/1.png");}, 50);
 setTimeout(() => {$(".dice-image").attr("src", "res/img/dice/2.png");}, 150);
 setTimeout(() => {$(".dice-image").attr("src", "res/img/dice/3.png");}, 250);
@@ -416,10 +512,11 @@ loopVar = 1;
 
 moveAnim = setInterval(() => {
 $(".c-img"+currentPlayer+"-"+window["P"+currentPlayer+"_pos"]).css({display:'block'});
-
 setTimeout(() => {
+document.getElementById("jump-sound").play();
 $(".c-img"+currentPlayer+"-"+window["P"+currentPlayer+"_pos"]).css({display:'none'});
 window["P"+currentPlayer+"_pos"] ++;
+$(".c-img"+currentPlayer+"-"+window["P"+currentPlayer+"_pos"]).css({display:'block'});
 console.log(window["P"+currentPlayer+"_pos"]);
 if (window["P"+currentPlayer+"_pos"] === 43) {
     window["P"+currentPlayer+"_pos"] = 1;
@@ -428,22 +525,22 @@ if (loopVar == diceVar) {
 loopVar = 1;
 clearInterval(moveAnim);
 //clearInterval(moveAnim2);
-setTimeout(() => {
-    
-}, 300);
-console.log("interval cleared"+window["P"+currentPlayer+"_pos"]);
-$(".c-img"+currentPlayer+"-"+window["P"+currentPlayer+"_pos"]).css({display:'block'});
-$(".dice-img").click(function(){diceClick();});
 checkPosAndAction();
+console.log("interval cleared"+window["P"+currentPlayer+"_pos"]);
 } else {loopVar++;}
 }, 150);
 
-}, 300);
+}, 500);
 
 
 
 }, 510);
 }
+
+$(".close-img").click(function() {
+$(".sell-asset").fadeOut();
+});
+
 
 
 function nextPlayer() {
@@ -452,10 +549,109 @@ else {currentPlayer++; console.log("blum"+currentPlayer);}
 $(".dice-arrow").css({visibility:"visible"});
 $("#turn").html(currentPlayer);
 $(".turn-img").attr("src", "res/img/charac/"+currentPlayer+".png");
+$(".player-bg").css({backgroundColor:'white'});
+$(".player-bg"+currentPlayer).css({backgroundColor:'#00ffff'});
+$(".dice-img").click(function(){diceClick();});
 }
 
+max = 150;
+min = 50;
+
+function checkWinner() {
+if (window["p"+currentPlayer+"_point"] == 4) {
+//GameOver
+
+}
+}
+
+function tradeAppend() {
+console.log("tradeAppend called");
+
+for (let a = 0; a < window["P"+currentPlayer+"_house"].length; a++) {
+tmp_house = Math.floor(Math.random() * (max - min + 1) + min);
+result = window["P"+currentPlayer+"_house"][a] * tmp_house/100;
+$(".house-bg").append(`
+<div class="house-ct house-ct${a}">
+<img src="res/img/house.png" class="sell-asset-img">
+Bought for $${window["P"+currentPlayer+"_house"][a]}
+<div class="sell-asset-btn sell-house" id="sell-house${a}" onclick="tmp_amt = ${result};">$${result}</div>
+</div>
+`);
+if (tmp_house < 100) {$("#sell-house"+a).css({backgroundColor:'#e22f2f'});}
+}
+
+for (let b = 0; b < window["P"+currentPlayer+"_land"].length; b++) {
+tmp_land = Math.floor(Math.random() * (max - min + 1) + min);
+result =window["P"+currentPlayer+"_land"][b] * tmp_land/100;
+$(".land-bg").append(`
+<div class="land-ct land-ct${b}">
+<img src="res/img/land.png" class="sell-asset-img">
+Bought for $${window["P"+currentPlayer+"_land"][b]}
+<div class="sell-asset-btn sell-land" id="sell-land${b}" onclick="tmp_amt = ${result};">$${result}</div>
+</div>
+`);
+if (window["tmp_land"+b] < 100) {$("#sell-land"+b).css({backgroundColor:'#e22f2f'});}
+}
+
+for (let c = 0; c < window["P"+currentPlayer+"_building"].length; c++) {
+tmp_building = Math.floor(Math.random() * (max - min + 1) + min);
+result =window["P"+currentPlayer+"_building"][c] * tmp_building/100;
+$(".building-bg").append(`
+<div class="building-ct building-ct${c}">
+<img src="res/img/building.png" class="sell-asset-img">
+Bought for $${window["P"+currentPlayer+"_building"][c]}
+<div class="sell-asset-btn sell-building" id="sell-building${c}" onclick="tmp_amt = ${result};">$${result}</div>
+</div>
+`);
+if (window["tmp_building"+c] < 100) {$("#sell-building"+c).css({backgroundColor:'#e22f2f'});}
+}
+
+tradeClick();
+}
 
 </script>
 <script src="res/script/checkPosAndAction.js"></script>
+
+<script>
+function tradeClick() {
+$(".sell-land").click(function() {
+document.getElementById("earn-sound").play();
+landId = parseInt($(this).attr("id").replace("sell-land", ""));
+window["P_cash"+currentPlayer]+= tmp_amt;
+$("#cash"+currentPlayer).html(window["P_cash"+currentPlayer]);
+window["P"+currentPlayer+"_land"].splice(landId, 1);
+$(".land-bg, .house-bg, .building-bg").empty();
+if (window["P"+currentPlayer+"_land"].length == 0) {
+$(".pl-land"+currentPlayer).css({visibility:'hidden'});
+window["p"+currentPlayer+"_point"]--;
+}
+tradeAppend();
+});
+
+$(".sell-house").click(function() {
+document.getElementById("earn-sound").play();
+houseId = parseInt($(this).attr("id").replace("sell-house", ""));
+window["P_cash"+currentPlayer]+= tmp_amt;
+$("#cash"+currentPlayer).html(window["P_cash"+currentPlayer]);
+window["P"+currentPlayer+"_house"].splice(houseId, 1);
+$(".land-bg, .house-bg, .building-bg").empty();
+if (window["P"+currentPlayer+"_house"].length == 0) {
+$(".pl-house"+currentPlayer).css({visibility:'hidden'});
+window["p"+currentPlayer+"_point"]--;
+}
+tradeAppend();
+});
+
+$(".sell-building").click(function() {
+document.getElementById("earn-sound").play();
+buildingId = parseInt($(this).attr("id").replace("sell-building", ""));
+window["P_cash"+currentPlayer]+= tmp_amt;
+$("#cash"+currentPlayer).html(window["P_cash"+currentPlayer]);
+window["P"+currentPlayer+"_building"].splice(buildingId, 1);
+$(".land-bg, .house-bg, .building-bg").empty();
+tradeAppend();
+});
+}
+</script>
 </body>
 </html>
