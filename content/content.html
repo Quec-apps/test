@@ -644,7 +644,7 @@ Bought for $${window["P"+currentPlayer+"_land"][b]}
 <div class="sell-asset-btn sell-land" id="sell-land${b}" onclick="tmp_amt = ${result};">$${result}</div>
 </div>
 `);
-if (window["tmp_land"+b] < 100) {$("#sell-land"+b).css({backgroundColor:'#e22f2f'});}
+if (tmp_land < 100) {$("#sell-land"+b).css({backgroundColor:'#e22f2f'});}
 }
 
 for (let c = 0; c < window["P"+currentPlayer+"_building"].length; c++) {
@@ -657,7 +657,7 @@ Bought for $${window["P"+currentPlayer+"_building"][c]}
 <div class="sell-asset-btn sell-building" id="sell-building${c}" onclick="tmp_amt = ${result};">$${result}</div>
 </div>
 `);
-if (window["tmp_building"+c] < 100) {$("#sell-building"+c).css({backgroundColor:'#e22f2f'});}
+if (tmp_building < 100) {$("#sell-building"+c).css({backgroundColor:'#e22f2f'});}
 }
 
 tradeClick();
