@@ -91,7 +91,8 @@ window["p"+currentPlayer+"_job"] = salary;
 $(".buy-dialog").css({transform:'translateY(100%)'});
 $(".dialog-char-img").attr("src", "res/img/charac/"+currentPlayer+".png");
 $("#dialog-box-top").html(currentPlayer);
-$(".dialog-box-txt").css({color:'#00ff00'});
+$("#type").html("Job");
+$(".dialog-box-txt").css({color:'black'});
 $(".dialog-box-txt").html("You got a Job");
 $(".dialog-box-bg").css({display:"flex"});
 setTimeout(() => {
