@@ -143,7 +143,6 @@ if (window["P"+currentPlayer+"_marry"] == false) {
 if (window["p"+currentPlayer+"_job"] == null) {
 $(".workarea-txt").html("Sorry, you need a job to get married");
 } else {
-if (window["P_cash"+currentPlayer] >= tmp_amt) {
 //married
 window["P"+currentPlayer+"_marry"] = true;
 document.getElementById("married-sound").play();
@@ -152,7 +151,6 @@ window["p"+currentPlayer+"_point"]++;
 checkWinner();
 $(".workarea-txt").html("Congrats! You are now married");
 $(".buy").off();
-} else {$(".workarea-txt").html("You dont have enough cash");}
 }
 } else {$(".workarea-txt").html("Sorry, you can only have one partner at a time :)");}
 });
