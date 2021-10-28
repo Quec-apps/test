@@ -8,7 +8,7 @@ $(".buy").click(function() {
 if (window["P_cash"+currentPlayer] >= tmp_amt) {
 //bought this
 $(".button").off();
-document.getElementById("earn-sound").play();
+document.getElementById("spend-sound").play();
 window["P"+currentPlayer+"_"+type].push(tmp_amt);
 checkFirstBuy(type);
 window["P_cash"+currentPlayer]-=tmp_amt;
@@ -17,9 +17,9 @@ $(".buy-dialog").css({transform:'translateY(100%)'});
 $(".dialog-char-img").attr("src", "res/img/charac/"+currentPlayer+".png");
 $("#dialog-box-top").html(currentPlayer);
 $("#type").html(type);
-$(".dialog-box-txt").css({color:'#00ff00'});
+$(".dialog-box-txt").css({color:'#ff0000'});
 $(".dialog-box-name").css({backgroundColor:'#00c200'});
-$(".dialog-box-txt").html("+$"+tmp_amt);
+$(".dialog-box-txt").html("-$"+tmp_amt);
 $(".dialog-box-bg").css({display:"flex"});
 setTimeout(() => {
 $(".dialog-box-bg").fadeOut();
