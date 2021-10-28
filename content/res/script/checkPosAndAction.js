@@ -89,7 +89,7 @@ checkWinner();
 }
 window["p"+currentPlayer+"_job"] = salary; 
 $(".buy-dialog").css({transform:'translateY(100%)'});
-$(".dialog-char").attr("src", "res/img/charac/"+currentPlayer+".png");
+$(".dialog-char-img").attr("src", "res/img/charac/"+currentPlayer+".png");
 $("#dialog-box-top").html(currentPlayer);
 $(".dialog-box-txt").css({color:'#00ff00'});
 $(".dialog-box-txt").html("You got a Job");
@@ -212,7 +212,7 @@ if (tmp_pos == 5) { /*hospital bill*/liabilityFunc(200, "hospital bill");}
 if (tmp_pos == 6) { /*house*/assetFunc(400, "house");}  
 if (tmp_pos == 7) { /*trade*/tradeFunc();}  
 if (tmp_pos == 8) { /*traffic-fine*/liabilityFunc(100, "traffic fine");}  
-if (tmp_pos == 9) { /*traffic-fine*/assetFunc(100, "building");}  
+if (tmp_pos == 9) { /*building*/assetFunc(100, "building");}  
 if (tmp_pos == 10) { /*marriage*/marriageFunc();} 
 if (tmp_pos == 11) { /*income-tax*/liabilityFunc(100, "Income tax");}
 if (tmp_pos == 12) { /*lottery*/incomeFunc(100, "lottery");} 
@@ -228,6 +228,23 @@ if (tmp_pos == 21) { /*job*/jobFunc(0.5);}
 if (tmp_pos == 22) { /*free point*/nextPlayer();}  
 if (tmp_pos == 23) { /*charity*/liabilityFunc(300, "charity");}  
 if (tmp_pos == 24) { /*land*/assetFunc(300, "land");}  
-
+if (tmp_pos == 25) { /*job*/jobFunc(2);} 
+if (tmp_pos == 26) { /*hospital bill*/liabilityFunc(150, "hospital bill");}  
+if (tmp_pos == 27) { /*house*/assetFunc(600, "house");}  
+if (tmp_pos == 28) { /*trade*/tradeFunc();}  
+if (tmp_pos == 29) { /*traffic-fine*/liabilityFunc(280, "traffic fine");}  
+if (tmp_pos == 30) { /*building*/assetFunc(500, "building");}  
+if (tmp_pos == 31) { /*marriage*/marriageFunc();} 
+if (tmp_pos == 32) { /*income-tax*/liabilityFunc(200, "Income tax");}
+if (tmp_pos == 33) { /*lottery*/incomeFunc(120, "lottery");} 
+if (tmp_pos == 34) { /*theft*/liabilityFunc(160, "Theft");}
+if (tmp_pos == 35) { /*job*/jobFunc(1);} 
+if (tmp_pos == 36) { /*hospital bill*/liabilityFunc(190, "hospital bill");}  
+if (tmp_pos == 37) { /*house*/assetFunc(290, "house");}  
+if (tmp_pos == 38) { /*divorce*/divorceFunc();} 
+if (tmp_pos == 39) { /*free point*/nextPlayer();}  
+if (tmp_pos == 40) { /*divorce*/divorceFunc();} 
+if (tmp_pos == 41) { /*theft*/liabilityFunc(130, "Theft");}
+if (tmp_pos == 42) { /*lottery*/incomeFunc(160, "lottery");} 
 
 }
